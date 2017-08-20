@@ -1,0 +1,36 @@
+{
+  "name": "Snippets Quick Search",
+  "description": "Search is heart of Snippets.Quickly save and search, all data stored Offline(locally), private and safe.Store commands,code or notes",
+  "version": "5.0",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["jquery.min.js","bootstrap.min.js","mustache.min.js","db.js","myapp.js","background.js"]
+    }
+  },
+  "permissions": [
+          "storage", "unlimitedStorage"
+        ],
+  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" },
+  "commands":{
+	"find_action": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+F",
+              "windows": "Ctrl+Shift+F",
+              "mac": "Ctrl+Shift+F"
+            },
+			"description":"find",
+			"global": true
+          },
+	"test_find_action2": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+Z",
+              "windows": "Ctrl+Shift+Z",
+              "mac": "Ctrl+Shift+Z"
+            },
+			"description":"find",
+			"global": true
+          }
+  
+  }
+}
